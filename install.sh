@@ -15,3 +15,5 @@ fi
 
 vim +BundleInstall +qall
 
+
+ln -sf $SRC_DIR/gitconfig ~/.gitconfig
