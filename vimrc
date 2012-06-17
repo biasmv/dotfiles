@@ -89,3 +89,5 @@ inoremap <esc> <nop>
 set scrolloff=8
 set sidescrolloff=15
 set sidescroll=1
+
+nmap <LEADER>c :let @/=''<CR>
