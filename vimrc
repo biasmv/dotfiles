@@ -7,7 +7,18 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
 set hidden
 syntax enable
-set background=light
+" Determine background color based on value of COLORFGBG environment variable
+"   this only works for iTerm
+if $COLORFGBG
+  let bg=split($COLORFGBG, ';')[1]
+  if bg=='15'
+    set background=light
+  else
+    set background=dark
+  endif
+else
+  set background=light
+endif
 colorscheme solarized
 
 set nowrap        " don't wrap lines
