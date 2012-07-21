@@ -79,4 +79,4 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 if has("autocmd")
   autocmd bufwritepost .vimrc source $MYVIMRC
 endif
-
+set laststatus=2
