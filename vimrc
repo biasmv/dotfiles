@@ -60,7 +60,6 @@ map <right> <nop>
 nnoremap j gj
 nnoremap k gk
 nnoremap ; :
-map wm :w<CR>:make<CR>
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\.git$\|\stage$\|doc/build$\|CMakeFiles$',
