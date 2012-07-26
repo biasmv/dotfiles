@@ -84,3 +84,5 @@ inoremap <left> <nop>
 inoremap <right> <nop>
 inoremap <up> <nop>
 inoremap <down> <nop>
+inoremap jk <esc>
+inoremap <esc> <nop>
