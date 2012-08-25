@@ -53,10 +53,10 @@ autocmd filetype python set expandtab
 
 set list
 set listchars=tab:▸\ ,eol:¬
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+map <up> ddkP
+map <down> ddp
+map <left> :tabp<CR>
+map <right> :tabn<CR>
 nnoremap j gj
 nnoremap k gk
 nnoremap ; :
