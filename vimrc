@@ -5,6 +5,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
+Bundle "pangloss/vim-javascript"
 set hidden
 syntax enable
 " Determine background color based on value of COLORFGBG environment variable
@@ -48,6 +49,7 @@ set visualbell           " don't beep
 set noerrorbells         " don't beep
 set nobackup
 set noswapfile
+set spell
 filetype plugin indent on
 autocmd filetype python set expandtab
 
