@@ -6,21 +6,16 @@ Bundle 'gmarik/vundle'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'kien/ctrlp.vim'
 Bundle "pangloss/vim-javascript"
+
+if v:version > 730
+  Bundle 'Valloric/YouCompleteMe'
+endif
+
 set hidden
 syntax enable
-" Determine background color based on value of COLORFGBG environment variable
-"   this only works for iTerm
-if $COLORFGBG
-  let bg=split($COLORFGBG, ';')[1]
-  if bg=='15'
-    set background=light
-  else
-    set background=dark
-  endif
-else
-  set background=light
-endif
 colorscheme solarized
+
+set guifont=Menlo:h14
 
 set nowrap        " don't wrap lines
 set tabstop=2     " a tab is four spaces
@@ -55,10 +50,14 @@ autocmd filetype python set expandtab
 
 set list
 set listchars=tab:▸\ ,eol:¬
-map <up> ddkP
-map <down> ddp
-map <left> :tabp<CR>
-map <right> :tabn<CR>
+"map <up> ddkP
+"map <down> ddp
+"map <left> :tabp<CR>
+"map <right> :tabn<CR>
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
 nnoremap j gj
 nnoremap k gk
 nnoremap ; :
